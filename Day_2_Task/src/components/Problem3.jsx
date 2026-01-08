@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Problem3 = () => {
   const [data, setData] = useState(false);
   let list;
+    let btnColor;
   const products = [
     "Laptops, ",
     "Mobiles, ",
@@ -15,8 +16,10 @@ const Problem3 = () => {
 
   if (data == true) {
     list = products;
+    btnColor = "bg-red-600 rounded-lg px-8 py-4 text-white text-lg font-semibold"
   } else {
     list = "No Products Founds";
+    btnColor = "bg-gray-600 rounded-lg px-8 py-4 text-white text-lg font-semibold"
   }
 
   return (
@@ -33,9 +36,9 @@ product list. */}
           </h2>
           <button
             onClick={() => setData(!data)}
-            className="bg-gray-600 rounded-lg px-8 py-4 text-white text-lg font-semibold"
+            className={btnColor}
           >
-            Show Data
+            {data ? "Remove Data" : "Show Data"}
           </button>
         </div>
       </div>
