@@ -8,15 +8,15 @@ const Problem1 = () => {
   let text;
 
   if (loggedIn == true) {
-    (message = "Welcome,Users"),
-      (design =
-        "bg-red-500 rounded-lg px-8 py-4 text-white text-lg font-semibold"),
-      (text = "LogOut");
+    message = "Welcome,Users",
+      design =
+        "bg-red-500 rounded-lg px-8 py-4 text-white text-lg font-semibold",
+      text = "LogOut";
   } else {
-    (message = "Please Login"),
-      (design =
-        "bg-green-500 rounded-lg px-8 py-4 text-white text-lg font-semibold"),
-      (text = "Login");
+    message = "Please Login",
+      design =
+        "bg-green-500 rounded-lg px-8 py-4 text-white text-lg font-semibold",
+      text = "Login";
   }
   return (
     <>
