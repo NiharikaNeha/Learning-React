@@ -28,7 +28,7 @@ const Problem5 = () => {
           disabled={isSubmitting}
           className={btnPaint}
         >
-          {isSubmitting ? "Submitting..." : "Submit"}
+          {isSubmitting ? "Submitting..." : "Submit..."}
         </button>
       </div>
     </div>
